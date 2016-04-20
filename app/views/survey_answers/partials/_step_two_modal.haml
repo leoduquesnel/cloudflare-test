@@ -1,0 +1,20 @@
+.modal.fade{tabindex: "-1", role: "dialog", id: "new_survey_answer_step_two_modal"}
+  .modal-dialog
+    .modal-content
+
+      .modal-header
+        %button.close{type: "button", "data-dismiss": "modal", "aria-label": "Close"}
+          %span{"aria-hidden": true}
+            ="&times;".html_safe
+        %h4.modal-title
+          = t('survey_answer_modal_title_step_two')
+
+      .modal-body
+        .options
+          .form-group
+            = label_tag :email_address, t('survey_answer_modal_label_email_step_two')
+            = email_field_tag :email_address, nil, class: 'form-control'
+
+      .modal-footer
+        %button.btn.btn-primary{type: 'button', class: 'center-block disabled'}
+          = t('survey_answer_modal_next_button_step_one')

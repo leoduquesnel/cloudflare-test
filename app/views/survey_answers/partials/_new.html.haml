@@ -1,0 +1,6 @@
+= form_for @survey_answer, remote: true do |f|
+  = f.hidden_field :selected_option
+  = f.hidden_field :email_address
+
+= render 'survey_answers/partials/step_one_modal'
+= render 'survey_answers/partials/step_two_modal'

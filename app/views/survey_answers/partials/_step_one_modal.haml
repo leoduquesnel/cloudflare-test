@@ -1,0 +1,24 @@
+.modal.fade{tabindex: "-1", role: "dialog", id: "new_survey_answer_step_one_modal"}
+  .modal-dialog
+    .modal-content
+      
+      .modal-header
+        %button.close{type: "button", "data-dismiss": "modal", "aria-label": "Close"}
+          %span{"aria-hidden": true}
+            ="&times;".html_safe
+        %h4.modal-title
+          = t('survey_answer_modal_title_step_one')
+
+      .modal-body
+        .options.text-center
+          .row
+            .col-sm-4
+              = image_tag 'http://lorempixel.com/100/100/sports/1', 'data-value': 'option_1', class: 'option'
+            .col-sm-4
+              = image_tag 'http://lorempixel.com/100/100/sports/2', 'data-value': 'option_2', class: 'option'
+            .col-sm-4
+              = image_tag 'http://lorempixel.com/100/100/sports/3', 'data-value': 'option_3', class: 'option'
+
+      .modal-footer.text-center
+        %button.btn.btn-default{type: 'button', class: 'center-block disabled'}
+          = t('survey_answer_modal_next_button_step_one')

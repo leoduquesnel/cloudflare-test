@@ -1,0 +1,8 @@
+alert('<%= t('alert_message_survey_answer_created') %>');
+$('.modal-footer button').addClass('disabled')
+
+$('#new_survey_answer_step_one_modal .option').removeClass('selected')
+$('#new_survey_answer_step_one_modal').modal()
+
+$('#new_survey_answer_step_two_modal #email_address').val('')
+$('#new_survey_answer_step_two_modal').modal('hide')
