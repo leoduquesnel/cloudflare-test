@@ -12,7 +12,8 @@
 require 'test_helper'
 
 class SurveyAnswerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "email_address and selected_option are required" do
+    assert_not SurveyAnswer.new.valid?
+    assert SurveyAnswer.new(email_address: 'leo.duquesnel@gmail.com', selected_option: 'option_1').valid?
+  end
 end
