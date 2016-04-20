@@ -1,4 +1,9 @@
-alert('<%= t('alert_message_survey_answer_created') %>');
+if (<%= @errors == 0 %>)
+  alert('<%= t('alert_message_survey_answer_created') %>');
+else
+  alert('<%= t('alert_message_survey_answer_error') %>');
+
+
 $('.modal-footer button').addClass('disabled')
 
 $('#new_survey_answer_step_one_modal .option').removeClass('selected')

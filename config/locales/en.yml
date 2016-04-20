@@ -4,3 +4,4 @@ en:
   survey_answer_modal_label_email_step_two: 'Email'
   survey_answer_modal_title_step_two: 'Enter your email'
   alert_message_survey_answer_created: 'Answer saved !'
+  alert_message_survey_answer_error: 'An error occured. The answer has not been saved.'

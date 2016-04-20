@@ -1,7 +1,7 @@
 class SurveyAnswersController < ApplicationController
 
   def create
-    SurveyAnswer.create(survey_answer_params)
+    @errors = SurveyAnswer.create(survey_answer_params).errors
 
     respond_to do |format|
       format.js
