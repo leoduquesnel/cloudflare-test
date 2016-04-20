@@ -12,3 +12,6 @@ You're ready
 ## Run tests
 
 `rake test`
+
+
+Deployed on : https://blooming-sands-82988.herokuapp.com/
