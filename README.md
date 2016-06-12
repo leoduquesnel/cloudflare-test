@@ -1,4 +1,4 @@
-Cloudflare test by Léo Duquesnel
+UserRegister test by Léo Duquesnel
 ==
 
 ## How to set up the project:

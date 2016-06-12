@@ -1,11 +1,11 @@
 development:
   adapter: postgresql
-  database: cloudflare_test_development
+  database: user_register_development
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
-  database: cloudflare_test_test
+  database: user_register_test
   pool: 5
   timeout: 5000
